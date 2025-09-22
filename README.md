@@ -1,1 +1,1 @@
-Learn more about me! I like this website because it's brown and brown is my favorite color.
+Learn more about me, the things I've done, and what I want to do!
