@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Menu, X, FileDown, MouseIcon, ChevronDown, Calendar } from 'lucide-react';
 import './App.css';
 
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -48,8 +49,8 @@ function App() {
       title: 'Co-founder, Chief Technical Officer',
       context: '@ PACE.ai',
       skills: '',
-      date: 'August 2025 - Present',
-      description: 'Powering Access to Clean Energy. Building a full-stack application using AI agents to accelerate the due dilligence process for energy access projects in sub-Saharan Africa. Currently building and gaining interest from multiple financiers and developers'
+      date: 'August 2025 - December 2025',
+      description: 'Powering Access to Clean Energy. Built a full-stack application using AI agents to accelerate the due dilligence process for energy access projects in sub-Saharan Africa. Garnered significant interest from multiple financiers and developers'
     },
     {
       title: 'Summer Associate',
@@ -60,10 +61,10 @@ function App() {
     },
     {
       title: 'Research Assistant',
-      context: '@ Stanford Quantitative Sciences Unit',
+      context: '@ Stanford Advanced Informatics for Mental Health Lab',
       skills: '',
       date: 'January 2025 - Present',
-      description: 'Used novel “cheat-sheet” prompting approach to improve accuracy in clinical note classification, improving F1-score by 12%. Engineered pipeline to efficiently extract patient health information from electronic health records using regular expressions'
+      description: 'The AI4MH Lab\'s mission is to apply data-driven methods and leverage cutting-edge artificial AI tools to accurately measure and improve the quality of care provided by pediatricians to children with developmental, behavioral, and mental health conditions. My current work focuses on discovering LLMs capabilities to accurately detect and predict the medication adherence of pediatric patients with ADHD.'
   
     },
     {
@@ -77,6 +78,12 @@ function App() {
   ];
 
   const projects = [
+    {
+      title: 'Wavelength',
+      description: 'Submitted for Treehacks 2026, Wavelength was the dreamchild of two friends and I to make a social media platform that felt less performative, infused with generative AI. Users post their thoughts and pictures they like, scrolling through a widget based feed free of likes or followers. An AI matchmaker on the backend gives users a new person to connect with based off shared interests in posts everyday.',
+      github: 'https://github.com/mofor809/Treehacks_Proj/tree/main',
+      technologies: ['Python', 'Claude API', 'Supabase', 'Next.js', 'Tailwind CSS']
+    },
     {
       title: 'Quantifying the School to Prison Pipeline in Chicago Public Schools',
       description: 'Data science project to uncover the largest contributors to heightened punitive measures in Chicago public schools, and seeing if this correlated to incarceration rates in the area. Used XGBoost to discover strongest predictors and Bivariate Morans I to uncover if the redlining of Chicago neighborhoods affected the spatial distribution of heavy punitive measures and/or heavy incarceration.',
@@ -147,7 +154,7 @@ function App() {
                 </button>
               );
             })}
-            <a href="\resume.docx"
+            <a href="/my-portfolio/resume.docx"
                 download="My Resume"
                 className="btn-outline w-full justify-center flex items-center"
               >
@@ -208,10 +215,10 @@ function App() {
                 Yannick Mofor
               </h1>
               <h2 className="text-2xl md:text-3xl text-slate-gray mb-6">
-                CS and Data Science Student at Stanford University
+                Computer Science Student at Stanford University
               </h2>
               <p className="text-lg text-primary-text mb-8 max-w-lg">
-                Passionate about improving the lives of others through software engineering, data science, and emerging technologies.
+                Passionate about improving the lives of others through building equitable and interpretable artificial intelligence applications.
               </p>
               <button 
                 onClick={() => scrollToSection('contact')}
@@ -227,7 +234,7 @@ function App() {
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary-accent/20 to-transparent flex items-center justify-center">
               <div className="w-64 h-64 rounded-full bg-component-bg flex items-center justify-center">
                 {/* <div className="text-6xl font-bold text-primary-accent">YM</div> */}
-                <img src="\headshot.jpeg" alt="YM" className="rounded-full w-64 h-64 object-cover"></img>
+                <img src="/my-portfolio/headshot.jpeg" alt="YM" className="rounded-full w-64 h-64 object-cover"></img>
               </div>
             </div>
           </div>
@@ -252,7 +259,7 @@ function App() {
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-lg bg-component-bg flex items-center justify-center shadow-xl">
                 {/* <div className="text-8xl font-bold text-primary-accent/30">YM</div> */}
-                <img src="\research_pic.jpg" alt="YM"></img>
+                <img src="/my-portfolio/research_pic.jpg" alt="YM"></img>
               </div>
             </div>
             
